@@ -59,7 +59,8 @@ public class CatWalk : MonoBehaviour {
         if (direction == Vector3.up)
         {
             Score.scoreValue += 1;
-
+            var audioSource = GetComponent<AudioSource>();
+            audioSource.Play();
         };
                 
         direction = Vector3.down;
