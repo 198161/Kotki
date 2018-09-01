@@ -3,7 +3,15 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Cat1
+  - Cat2
+  - Cat3
+  - Cat4
+  - Cat5
+  - Cat6
+  - Heart
+  - Speed
   layers:
   - Default
   - TransparentFX
