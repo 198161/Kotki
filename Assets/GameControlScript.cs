@@ -21,7 +21,6 @@ public class GameControlScript : MonoBehaviour {
     void Update () {
         if (health > 3)
             health = 3;
-
         switch (health)
         {
             case 3:
@@ -38,7 +37,7 @@ public class GameControlScript : MonoBehaviour {
                 heart1.gameObject.SetActive(true);
                 heart2.gameObject.SetActive(false);
                 heart3.gameObject.SetActive(false);
-                break;
+				break;
             case 0:
                 heart1.gameObject.SetActive(false);
                 heart2.gameObject.SetActive(false);

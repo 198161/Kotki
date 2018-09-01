@@ -11,6 +11,8 @@ public class CatWalk : MonoBehaviour {
     public float maxSpeed = 14f;
     public float MaxUpPos;
     public float MaxDownPos;
+	public float MaxUpPos2;
+    public float MaxDownPos2;
     public int licz = 5;
 
     float speed = 1f;
@@ -25,31 +27,41 @@ public class CatWalk : MonoBehaviour {
     void FixedUpdate()
     {
         transform.position += direction * Time.deltaTime * speed;
-
-
-
+	if (CatSpa.randomIndex < 3){
         if (transform.position.y >= MaxUpPos)
         {
             direction = Vector3.down;
             GameControlScript.health -= 1;
              }
-
-
       if ( Score.scoreValue > licz)
         {
             speed += 0.2f;
             licz += 5;
-
-
         }
-
 
         if (transform.position.y <= MaxDownPos)
             Destroy(gameObject);
 
+}
+	else 
+		if (CatSpa.randomIndex >=3)
+		{ 
+	if (transform.position.y >= MaxUpPos2)
+        {
+            direction = Vector3.down;
+            //GameControlScript.health -= 1;
+             }
+      if ( Score.scoreValue > licz)
+        {
+            speed += 0.2f;
+            licz += 5;
+        }
 
+        if (transform.position.y <= MaxDownPos2)
+            Destroy(gameObject);
+}
 
-        Debug.Log(transform.position.y);
+        //Debug.Log(transform.position.y);
     }
 
 

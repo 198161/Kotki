@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class CatSpa : MonoBehaviour
 {
-
+	public static int randomIndex;
     public float spawnDelay = .3f;
 
     public GameObject cat;
@@ -24,7 +24,7 @@ public class CatSpa : MonoBehaviour
 
     void SpawnCat()
     {
-        int randomIndex = Random.Range(0, spawnPoints.Length);
+        randomIndex = Random.Range(0, spawnPoints.Length);
         Transform spawnPoint = spawnPoints[randomIndex];
 
         Instantiate(cat,spawnPoint.position,spawnPoint.rotation);

@@ -22,7 +22,7 @@ public class CatMove : MonoBehaviour {
 
        
 
-        Debug.Log(transform.position.y);
+        //Debug.Log(transform.position.y);
 
     }
     void OnMouseDown()
