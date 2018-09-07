@@ -66,16 +66,7 @@ public class CatMenu : MonoBehaviour {
         }
         else
         {
-            if(coin.coinNumber >=200) //Jeżeli mamy wystarczającą liczbę kredytów
-            {
-                cat1Button.enabled = true; //Ramka jest aktywna
-                cat1Button.GetComponent<Image>().color = Color.white;
-            }
-            else
-            {
-                cat1Button.enabled = false; //Nie mamy wystarczającej liczbby kredytów
-                cat1Button.GetComponent<Image>().color = Color.red;
-            }
+            NewMethod();
         }
 
         if (cat2) //Czy mamy tę skórkę?
@@ -259,6 +250,21 @@ public class CatMenu : MonoBehaviour {
         }
 
     }
+
+    private void NewMethod()
+    {
+        if (coin.coinNumber >= 200) //Jeżeli mamy wystarczającą liczbę kredytów
+        {
+            cat1Button.enabled = true; //Ramka jest aktywna
+            cat1Button.GetComponent<Image>().color = Color.white;
+        }
+        else
+        {
+            cat1Button.enabled = false; //Nie mamy wystarczającej liczbby kredytów
+            cat1Button.GetComponent<Image>().color = Color.red;
+        }
+    }
+
     public void PurchaseCat1()
     {
         if(cat1) //Sprawdzenie skórki
