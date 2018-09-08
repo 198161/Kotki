@@ -4,17 +4,20 @@ using UnityEngine;
 
 public class GameControlScript : MonoBehaviour {
 
-    public GameObject heart1, heart2, heart3, gameOver;
+    public GameObject heart1, heart2, heart3, gameOver, spawn;
     public static int health;
 
 
 	// Use this for initialization
 	void Start () {
+        spawn.gameObject.SetActive(true);
         health =3;
         heart1.gameObject.SetActive(true);
         heart2.gameObject.SetActive(true);
         heart3.gameObject.SetActive(true);
-        gameOver.gameObject.SetActive(true);
+        gameOver.gameObject.SetActive(false);
+        
+
     }
 
     // Update is called once per frame

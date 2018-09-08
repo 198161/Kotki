@@ -27,6 +27,8 @@ public class CatSpa : MonoBehaviour
         randomIndex = Random.Range(0, spawnPoints.Length);
         Transform spawnPoint = spawnPoints[randomIndex];
 
+        //Debug.Log(randomIndex);
+
         Instantiate(cat,spawnPoint.position,spawnPoint.rotation);
 
     }

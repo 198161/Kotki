@@ -27,7 +27,7 @@ public class CatWalk : MonoBehaviour {
     void FixedUpdate()
     {
         transform.position += direction * Time.deltaTime * speed;
-	if (CatSpa.randomIndex < 3){
+	if (CatSpa.randomIndex < 2){
         if (transform.position.y >= MaxUpPos)
         {
             direction = Vector3.down;
@@ -44,12 +44,12 @@ public class CatWalk : MonoBehaviour {
 
 }
 	else 
-		if (CatSpa.randomIndex >=3)
+		if (CatSpa.randomIndex >=2)
 		{ 
 	if (transform.position.y >= MaxUpPos2)
         {
             direction = Vector3.down;
-            //GameControlScript.health -= 1;
+            GameControlScript.health -= 1;
              }
       if ( Score.scoreValue > licz)
         {
@@ -61,7 +61,7 @@ public class CatWalk : MonoBehaviour {
             Destroy(gameObject);
 }
 
-        //Debug.Log(transform.position.y);
+      //  Debug.Log(transform.position.y);
     }
 
 
