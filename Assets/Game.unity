@@ -147,7 +147,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -118.38, y: -50}
+  m_AnchoredPosition: {x: -118.38, y: -95.000015}
   m_SizeDelta: {x: 163.7, y: 38.2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &37443730
@@ -820,6 +820,17 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1763207070}
         m_MethodName: PurchaseCat5
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1799024362}
+        m_MethodName: SwitchAvatar
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3842,6 +3853,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1799024362}
+        m_MethodName: SwitchAvatar
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1159055982
@@ -4324,6 +4346,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1799024362}
+        m_MethodName: SwitchAvatar
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1246259385
@@ -4582,6 +4615,17 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1763207070}
         m_MethodName: PurchaseCat6
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1799024362}
+        m_MethodName: SwitchAvatar
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5218,6 +5262,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1799024362}
+        m_MethodName: SwitchAvatar
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1452560505
@@ -5539,6 +5594,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1799024362}
+        m_MethodName: SwitchAvatar
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1583179108
@@ -5742,7 +5808,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -8, y: 32.45}
+  m_AnchoredPosition: {x: -8, y: -12.550011}
   m_SizeDelta: {x: 193.1, y: 64.9}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1644594321
@@ -6301,7 +6367,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coin: {fileID: 434082514}
-  Hearts: 0
   HeartsMax: 3
   GameSpeed: 0
   GameSpeedMax: 9
@@ -6426,6 +6491,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spawnDelay: 3
+  basicSprite: {fileID: 21300000, guid: 9bf8dee68877782408969b49ae96b1b8, type: 3}
+  catSprite0: {fileID: 21300000, guid: 9bf8dee68877782408969b49ae96b1b8, type: 3}
+  catSprite1: {fileID: 21300000, guid: 580c8336b8fc07347bae3684d99ca67c, type: 3}
+  catSprite2: {fileID: 21300000, guid: 6a5e01a2ead044e4daf7279367ec9d00, type: 3}
+  catSprite3: {fileID: 21300000, guid: 3b073baec2f7b7e4996c0e825830a1be, type: 3}
+  catSprite4: {fileID: 21300000, guid: f9c5fcf6b0d18d4478e684f83dc17854, type: 3}
+  catSprite5: {fileID: 21300000, guid: dcbf9cf214bee204883027c0d057c5b6, type: 3}
+  catSprite6: {fileID: 21300000, guid: 3fb19da27cb1ffa4db6b4d415faa938a, type: 3}
   cat: {fileID: 1508518117594534, guid: 93332bb7c4ea43646939492250f2f4fb, type: 2}
   spawnPoints:
   - {fileID: 45617891}
@@ -7385,7 +7458,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -159.98, y: 21.999996}
+  m_AnchoredPosition: {x: -159.98, y: -23}
   m_SizeDelta: {x: 80.5, y: 84.4}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2141407582

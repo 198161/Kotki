@@ -31,7 +31,7 @@ public class CatWalk : MonoBehaviour
     {
         transform.position += direction * Time.deltaTime * speed;
 
-        if (CatSpa.randomIndex < 3)
+        if (CatSpa.randomIndex < 2)
         {
             if (transform.position.y >= MaxUpPos)
             {
@@ -43,7 +43,7 @@ public class CatWalk : MonoBehaviour
                 Destroy(gameObject);
 
         }
-        else if (CatSpa.randomIndex >= 3)
+        else if (CatSpa.randomIndex >= 2)
         {
             if (transform.position.y >= MaxUpPos2)
             {
@@ -62,8 +62,8 @@ public class CatWalk : MonoBehaviour
             Przelicznikpredkosci += 1;
         }
         // Debug.Log(Score.scoreValue + "      " + licz);
-        Debug.Log(speed);
-        Debug.Log(Przelicznikpredkosci);
+       // Debug.Log(speed);
+        //Debug.Log(Przelicznikpredkosci);
 
 
         //Debug.Log(transform.position.y);

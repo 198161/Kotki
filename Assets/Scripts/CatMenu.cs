@@ -47,7 +47,8 @@ public class CatMenu : MonoBehaviour {
             if(useCat1) //On/Off cat1
             {
                 cat1Button.GetComponent<Image>().color = Color.green; //Jeżeli używamy skórkę, to kolor ramki zmienia się na zielony
-                Debug.Log("Cat skin has been used");
+                CatSpa.whichAvatarIsOn = 1;
+                Debug.Log("Cat skin 1 has been used");
                 if(useCat1) //Wyłączenie reszty nieużywanych skórek
                 {
                     useCat1 = true; //W użyciu
@@ -61,7 +62,7 @@ public class CatMenu : MonoBehaviour {
             else
             {
                 cat1Button.GetComponent<Image>().color = Color.blue; //Jeżeli nie używamy skórki, to kolor ramki zmienia się na niebieski
-                Debug.Log("Cat skin can not be used");
+                Debug.Log("Cat skin 1 can not be used");
             }
         }
         else
@@ -74,7 +75,8 @@ public class CatMenu : MonoBehaviour {
             if (useCat2) //On/Off cat1
             {
                 cat2Button.GetComponent<Image>().color = Color.green; //Jeżeli używamy skórkę, to kolor ramki zmienia się na zielony
-                Debug.Log("Cat skin has been used");
+                CatSpa.whichAvatarIsOn = 2;
+                Debug.Log("Cat skin 2 has been used");
                 if (useCat2) //Wyłączenie reszty nieużywanych skórek
                 {
                     useCat1 = false; //Wyłączone
@@ -88,7 +90,7 @@ public class CatMenu : MonoBehaviour {
             else
             {
                 cat2Button.GetComponent<Image>().color = Color.blue; //Jeżeli nie używamy skórki, to kolor ramki zmienia się na niebieski
-                Debug.Log("Cat skin can not be used");
+                Debug.Log("Cat skin 2 can not be used");
             }
         }
         else
@@ -110,7 +112,8 @@ public class CatMenu : MonoBehaviour {
             if (useCat3) //On/Off cat1
             {
                 cat3Button.GetComponent<Image>().color = Color.green; //Jeżeli używamy skórkę, to kolor ramki zmienia się na zielony
-                Debug.Log("Cat skin has been used");
+                CatSpa.whichAvatarIsOn = 3;
+                Debug.Log("Cat skin 3 has been used");
                 if (useCat3) //Wyłączenie reszty nieużywanych skórek
                 {
                     useCat1 = false; //Wyłączone
@@ -124,7 +127,7 @@ public class CatMenu : MonoBehaviour {
             else
             {
                 cat3Button.GetComponent<Image>().color = Color.blue; //Jeżeli nie używamy skórki, to kolor ramki zmienia się na niebieski
-                Debug.Log("Cat skin can not be used");
+                Debug.Log("Cat skin 3 can not be used");
             }
         }
         else
@@ -146,7 +149,8 @@ public class CatMenu : MonoBehaviour {
             if (useCat4) //On/Off cat1
             {
                 cat4Button.GetComponent<Image>().color = Color.green; //Jeżeli używamy skórkę, to kolor ramki zmienia się na zielony
-                Debug.Log("Cat skin has been used");
+                CatSpa.whichAvatarIsOn = 4;
+                Debug.Log("Cat skin 4 has been used");
                 if (useCat4) //Wyłączenie reszty nieużywanych skórek
                 {
                     useCat1 = false; //Wyłączone
@@ -160,7 +164,7 @@ public class CatMenu : MonoBehaviour {
             else
             {
                 cat4Button.GetComponent<Image>().color = Color.blue; //Jeżeli nie używamy skórki, to kolor ramki zmienia się na niebieski
-                Debug.Log("Cat skin can not be used");
+                Debug.Log("Cat skin 4 can not be used");
             }
         }
         else
@@ -182,7 +186,8 @@ public class CatMenu : MonoBehaviour {
             if (useCat5) //On/Off cat1
             {
                 cat5Button.GetComponent<Image>().color = Color.green; //Jeżeli używamy skórkę, to kolor ramki zmienia się na zielony
-                Debug.Log("Cat skin has been used");
+                CatSpa.whichAvatarIsOn = 5;
+                Debug.Log("Cat skin 5 has been used");
                 if (useCat5) //Wyłączenie reszty nieużywanych skórek
                 {
                     useCat1 = false; //Wyłączone
@@ -196,7 +201,7 @@ public class CatMenu : MonoBehaviour {
             else
             {
                 cat5Button.GetComponent<Image>().color = Color.blue; //Jeżeli nie używamy skórki, to kolor ramki zmienia się na niebieski
-                Debug.Log("Cat skin can not be used");
+                Debug.Log("Cat skin 5 can not be used");
             }
         }
         else
@@ -218,7 +223,8 @@ public class CatMenu : MonoBehaviour {
             if (useCat6) //On/Off cat1
             {
                 cat6Button.GetComponent<Image>().color = Color.green; //Jeżeli używamy skórkę, to kolor ramki zmienia się na zielony
-                Debug.Log("Cat skin has been used");
+                CatSpa.whichAvatarIsOn = 6;
+                Debug.Log("Cat skin 6 has been used");
                 if (useCat6) //Wyłączenie reszty nieużywanych skórek
                 {
                     useCat1 = false; //Wyłączone
@@ -232,7 +238,7 @@ public class CatMenu : MonoBehaviour {
             else
             {
                 cat6Button.GetComponent<Image>().color = Color.blue; //Jeżeli nie używamy skórki, to kolor ramki zmienia się na niebieski
-                Debug.Log("Cat skin can not be used");
+                Debug.Log("Cat skin 6 can not be used");
             }
         }
         else
